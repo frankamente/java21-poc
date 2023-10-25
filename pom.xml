@@ -107,6 +107,13 @@
                                 <phase>package</phase>
                             </execution>
                         </executions>
+                        <configuration>
+                            <buildArgs>
+                                <buildArg>-H:+StrictImageHeap</buildArg>
+                                <buildArg>-H:+UnlockExperimentalVMOptions</buildArg>
+                                <buildArg>-march=native</buildArg>
+                            </buildArgs>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
